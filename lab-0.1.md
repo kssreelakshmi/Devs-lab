@@ -63,7 +63,7 @@ ip route show
 
 Here's a simple picture of how it all connects:
 
-![Network diagram](network-diagram.png)
+![Network diagram](https://github.com/kssreelakshmi/Devs-lab/blob/main/dev-images/network-diagram.png)
 
 ---
 
@@ -83,7 +83,7 @@ A VPN checks you once, when you log in, and then trusts you for the whole sessio
 
 On a VPN, your device basically becomes part of the internal network, so you could see other systems on it. With ZTNA, the rest of the network stays completely invisible to you — you only ever see the app you're using.
 
-![VPN vs ZTNA](ztna-vpn-diagram.png)
+![VPN vs ZTNA](https://github.com/kssreelakshmi/Devs-lab/blob/main/dev-images/ztna-vpn-diagram.png)
 
 **Quick summary:**
 
