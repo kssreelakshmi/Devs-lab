@@ -29,9 +29,8 @@ Using Swagger Editor, I wrote an OpenAPI 3.0 spec (`openapi.yaml`) for a Device 
 
 ## Screenshot 1: Swagger Editor — zero errors, all endpoints rendered
 
-*(Insert `swagger-screenshot.png` here)*
 
-`![Swagger Editor screenshot](./swagger-screenshot.png)`
+![Swagger Editor screenshot](https://github.com/kssreelakshmi/Devs-lab/blob/main/dev-images/swagger-screenshot.png?raw=true)
 
 This shows all 5 endpoints rendered correctly in Swagger UI's preview panel, color-coded by HTTP verb, with the lock icon confirming auth is applied to each. No errors in the validation panel.
 
@@ -41,7 +40,7 @@ This shows all 5 endpoints rendered correctly in Swagger UI's preview panel, col
 
 *(Insert `postman-import.png` here)*
 
-`![Postman import screenshot](./postman-import.png)`
+![Postman Import screenshot](https://github.com/kssreelakshmi/Devs-lab/blob/main/dev-images/postman-import.png?raw=true)
 
 Importing the exported `openapi.yaml` into Postman correctly generated a collection with all 5 endpoints, organized into a `devices` folder and a `{deviceId}` subfolder, along with the saved response examples (e.g. "Device successfully enrolled," "Unauthorized," "Device already enrolled").
 
