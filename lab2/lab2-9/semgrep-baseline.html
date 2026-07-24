@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Semgrep Report — vulnerable-go-app baseline</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, Arial, sans-serif; margin: 2rem; background: #f7f7f8; color: #1a1a1a; }
+  h1 { margin-bottom: 0.2rem; }
+  .subtitle { color: #666; margin-top: 0; }
+  .summary { display: flex; gap: 1rem; margin: 1.5rem 0; flex-wrap: wrap; }
+  .stat { background: white; padding: 0.75rem 1.25rem; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .stat-num { font-size: 1.6rem; font-weight: 700; }
+  .stat-label { font-size: 0.8rem; color: #666; letter-spacing: 0.05em; }
+  table { width: 100%; border-collapse: collapse; background: white; border-radius: 6px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  th, td { text-align: left; padding: 0.6rem 0.9rem; border-bottom: 1px solid #eee; vertical-align: top; }
+  th { background: #fafafa; font-size: 0.8rem; text-transform: uppercase; color: #666; }
+  .badge { color: white; padding: 0.15rem 0.5rem; border-radius: 4px; font-size: 0.75rem; font-weight: 600; }
+  .check-id { font-family: monospace; font-size: 0.85rem; color: #444; }
+  .errors { color: #c0392b; }
+  .total { font-weight: 600; }
+</style>
+</head>
+<body>
+  <h1>Semgrep Report</h1>
+  <p class="subtitle">vulnerable-go-app baseline</p>
+  <p class="total">1 finding(s)</p>
+  <div class="summary"><div class="stat" style="border-left:4px solid #d68910"><div class="stat-num">1</div><div class="stat-label">WARNING</div></div></div>
+  
+  <table>
+    <tr><th>Severity</th><th>Location</th><th>Rule</th><th>Message</th></tr>
+    
+        <tr>
+          <td><span class="badge" style="background:#d68910">WARNING</span></td>
+          <td>main.go:65</td>
+          <td class="check-id">go.lang.security.audit.net.use-tls.use-tls</td>
+          <td>Found an HTTP server without TLS. Use &#x27;http.ListenAndServeTLS&#x27; instead. See https://golang.org/pkg/net/http/#ListenAndServeTLS for more information.</td>
+        </tr>
+  </table>
+</body>
+</html>
